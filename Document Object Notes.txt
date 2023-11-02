@@ -1,0 +1,18 @@
+The DOM data structure is contained in a global object called document. This is used to access the various elements contained in the web page. There are several methods associated with this object to make it easier for us to manipulate the data structure. Three commonly used methods are:
+ 
+  document.getElementById(val) – return object representing the element found with attribute id=val
+  document.getElementsByTagName(name) – return an array of objects represent elements with tag of ‘name’
+  document.getElementsByCLassName(name) - return an array of objects represent elements with attribute class=name.
+ 
+Each of the above methods returns an object representing an element or an array of elements. There are also many properties associated with the document object to access useful elements. Three of these follow, but you will see a large list in the activity that follows.
+ 
+  document.body – returns an element representing the HTML <body> element
+  document.title – returns an html element representing the <title> title element
+  document.URL – returns the complete URL of the document (from where it was loaded).
+ 
+The element objects also have a number of properties and methods that are used to manipulate the DOM element. Common ones are:
+ 
+  elt.innerHTML – the text contained in the HTML element
+  elt.attribute – the value of an attribute
+  elt.setAttribute(attr,value) – set the value of an attribute
+  elt.style.property – a particular property of the style associated with the element
