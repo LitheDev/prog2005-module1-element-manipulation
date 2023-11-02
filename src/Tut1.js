@@ -4,6 +4,34 @@ let clicked = false;
 let toggleNumber = 0;
 let clickNumber = 0;
 
+// Person object, returns details to fullName array using anonymous function.
+let person = {
+    firstName: "Reza",
+    lastName: "Wood",
+
+    // Using firstName and lastName, return to fullName field.
+    fullName: function ()
+    {
+        return this.firstName + " " + this.lastName;
+
+    }
+}
+
+let employee = {name: "Barry", address: "123 Test Street", age: 21}
+}
+
+// Assigns the string from 'Fullname" to the paragraph with ID name
+function displayName()
+{
+
+    console.log(person.fullName()); // Logs full name using function
+    console.log(document.getElementsByTagName("p")[2]); // Logs fullname using array notation
+    document.getElementById("name").innerHTML = person.fullName(); // Sets fullname to ID name
+
+}
+
+
+
 // Function toggle, toggles the button on and off.
 function toggle()
 {
